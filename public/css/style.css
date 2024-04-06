@@ -1,0 +1,217 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppings', sans-serif;
+}
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: rgb(3, 3, 49);
+}
+
+
+#caixa{
+   text-align: center;
+   color: white;
+}
+
+.caixa-canvas{
+   display: flex;
+   flex-direction: row;
+}
+
+.canvas{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding-top: 1.5rem;
+   align-items: center;
+}
+
+div.dialogo{
+   display: flex;
+   position: absolute;
+   top: 0;
+   font-size: 12pt;
+   font-weight: 300;
+   padding: 0;
+}
+
+.melhor-score{
+ margin-left: 2rem;
+ width: 300px;
+}
+
+.melhor-score h3{
+   font-size: 16pt;
+   font-weight: 600;
+   margin-top: 2rem;
+}
+
+.resultado{
+   margin-top: .3rem !important;
+   display: flex !important;
+   flex-direction: column !important;
+   padding-top: .2rem;
+}
+
+.resultado span{
+   padding: .45rem;
+   background-color: black;
+   font-size: 13pt;
+   font-weight: 400;
+   margin-top: .3rem;
+   text-align: left;
+}
+
+#tela{
+   background-color: rgb(24, 23, 23);
+   margin-top: 10px;
+   border: 2px solid white;
+   filter: blur(3px);
+}
+
+.score{
+   font-size: 20pt;
+   display: flex;
+   flex-direction: column;
+   margin-top: .5rem;
+}
+
+.score--value{
+   font-weight: 600;
+   font-size: 3rem;
+   margin-top: -10px;
+   display: block;
+}
+
+/* GAME OVER */
+#menu-tela{
+   top: 30%;
+   width: 100%;
+   position: absolute;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   z-index: 1;
+}
+
+.game-over{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 2.8rem;
+}
+
+.final-score{
+   font-weight: 700;
+   font-size: 1.7rem;
+}
+
+.final-score span{
+   font-size: 1.5rem;
+}
+
+.btn-jogar{
+   border: none;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3px;
+   margin-top: 1rem;
+   padding: 4px 3px;
+   font-weight: 700;
+   font-size: 1rem;
+   color: rgb(63, 62, 62);
+   cursor: pointer;
+}
+
+/* Iniciar Jogo */
+.jogar-tela{
+   top: 30%;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   z-index: 1;
+}
+
+.jogar-tela h2{
+   font-size: 20pt;
+   font-weight: 600;
+}
+
+.jogar-tela label{
+   font-size: 14pt;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+
+#nomeInput{
+   font-size: 14pt;
+   margin-top: .5rem;
+   width: 300px;
+   padding: 0 5px;
+}
+
+.btn-iniciarJogo{
+   border: none;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3px;
+   margin-top: 1.5rem;
+   padding: 4px 5px;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: rgb(63, 62, 62);
+   cursor: pointer;
+}
+
+
+  /* Estilos para telas menores (menos de 600px) */
+  @media (max-width: 600px) {
+   body {
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 1em;
+     font-weight: 200;
+     font-size: 10pt;
+   }
+ 
+   .caixa-canvas {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   .canvas, .melhor-score {
+     width: 100%;
+     max-width: 300px;
+   }
+ 
+   .melhor-score {
+     margin-left: 0;
+     margin-top: 2rem;
+   }
+ 
+   #tela {
+     max-width: 100%;
+     height: auto;
+   }
+ 
+   #nomeInput {
+     width: 100%;
+   }
+ }
+ 
+
+ 
